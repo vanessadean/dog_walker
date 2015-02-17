@@ -28,7 +28,7 @@ WALKER_ARR.each do |array|
     :password_confirmation => array[counter],
     W_KEY_ARR[counter += 1]  => array[counter]
       )
-  w.avatar.store!(File.open(File.join(Rails.root, "public/seed-photos/" + array[0].downcase.gsub(" ", "_") + ".jpg")))
+  # w.avatar.store!(File.open(File.join(Rails.root, "public/seed-photos/" + array[0].downcase.gsub(" ", "_") + ".jpg")))
   w.save!
 end
 
@@ -97,7 +97,7 @@ PET_ARR.each do |array|
     P_KEY_ARR[counter += 1]  => array[counter],
     P_KEY_ARR[counter += 1]  => array[counter]
       )
-  p.avatar.store!(File.open(File.join(Rails.root, "public/seed-photos/" + array[0].downcase.gsub(" ", "_") + ".jpg")))
+  # p.avatar.store!(File.open(File.join(Rails.root, "public/seed-photos/" + array[0].downcase.gsub(" ", "_") + ".jpg")))
   p.save!
 end
 
@@ -127,7 +127,7 @@ OWNER_ARR.each do |array|
     :password_confirmation => array[counter],
     O_KEY_ARR[counter += 1]  => array[counter]
       )
-  o.avatar.store!(File.open(File.join(Rails.root, "public/seed-photos/" + array[0].downcase.gsub(" ", "_") + ".jpg")))
+  # o.avatar.store!(File.open(File.join(Rails.root, "public/seed-photos/" + array[0].downcase.gsub(" ", "_") + ".jpg")))
   o.save!
 end
 
